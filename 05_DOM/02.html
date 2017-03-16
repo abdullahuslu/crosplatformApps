@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    
+
+
+</head>
+<body>
+    <input type="button" id="buton" name="name" value="Mesaj Göster" />
+    <input type="button" id="buton2" name="name" value="sıfırla" />
+    <div id="isim">zafer</div>
+    <script>
+
+
+        var buton = document.getElementById("buton");
+        var buton2 = document.getElementById("buton2");
+        var isim = document.getElementById("isim")
+
+        buton.addEventListener("click", mesaj)
+        buton2.addEventListener("click", reset)
+        function mesaj() {
+
+            isim.style.backgroundColor = "red";
+            isim.style.color="white"
+           // alert("merhaba")
+        }
+        function reset() {
+
+            isim.style.backgroundColor = "";
+            isim.style.color = ""
+            // alert("merhaba")
+        }
+
+    </script>
+</body>
+</html>

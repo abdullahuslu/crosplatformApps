@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <title>Geolocation Örneği</title>
+
+    
+    
+    <script type="text/javascript">
+        //geolocation destekleyip desteklemediği kontrol ediliyor
+        //navigator.geolocation.getCurrentPosition şeklinde bir javascript API si var
+        //Bu iki adet fonksiyon getirir
+        //eğer coğrafi konum başarılıysa geoBasarili
+        //veya değilse  geoHatali
+        function Location_getir() {
+          
+                navigator.geolocation.getCurrentPosition(geoBasarili, geoHatali);
+          
+            //Coğrafi konum başarılı fonkiyonu bir parametre alır bu parametre pozisyon bilgisini içerir
+            function geoBasarili(pozisyonBilgisi) {
+                document.getElementById("boylam").innerHTML = pozisyonBilgisi.coords.longitude;
+                document.getElementById("enlem").innerHTML = pozisyonBilgisi.coords.latitude;
+                document.getElementById("hassasiyet").innerHTML = pozisyonBilgisi.coords.accuracy;
+            }
+            function geoHatali(hata) {
+                if (hata.code == 1)
+                    alert("Kullanıcı erişimi engelledi");
+                else if (hata.code == 2)
+                    alert("Yer belirlenemiyor!");
+                else if (hata.code == 3)
+                    alert("Yer belirleme için zaman aşımı");
+            }
+        }
+        window.onload = Location_getir;
+    </script>
+</head>
+<body>
+    <h2>Geolocation Örneği</h2>
+
+
+    <p>Boylam: <span id="boylam"></span></p>
+    <p>Enlem: <span id="enlem"></span></p>
+    <p>Hassasiyet: <span id="hassasiyet"></span></p>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+﻿@media screen and (min-width: 801px) {
+    #AnaBaslik {
+        font-size: 34pt;
+        font-family: Arial;
+        background-color: #2E00B8
+    }
+
+    #menu {
+        font-size: 18pt;
+        position: relative;
+        width: 100%;
+    }
+
+    #sol_sutun {
+        width: 200px;
+        height: 100%;
+        float: left;
+    }
+
+    #sayfa_icerigi {
+        margin-left: 210px;
+    }
+
+    #altlik {
+        border: 2px gray solid;
+        padding: 5pt;
+        margin-top: 5pt;
+    }
+}
+
+/* -------------------- */
+/*800 px den küçük olduğunda  */
+/*---------------------------*/
+@media screen and (max-width:800px) {
+    #AnaBaslik {
+        font-size: 24pt;
+        font-family: Verdana;
+        background-color: #FFCC33;
+        color: white;
+        text-align: right;
+    }
+
+    #menu {
+        font-size: 16pt;
+        position: inherit;
+        width: 100%;
+    }
+
+    #sol_sutun {
+        display: block;
+        width: 100%;
+    }
+
+        #sol_sutun ul {
+            margin-left: 0pt;
+            padding: 0;
+        }
+
+        #sol_sutun li {
+            display: inline;
+            margin-right: 5pt;
+        }
+
+    #sayfa_icerigi {
+        display: block;
+    }
+
+    #altlik {
+        border: 4px black dotted;
+        padding: 5pt;
+        font-style: italic;
+    }
+
+
+    body {
+        background-color: bisque;
+    }
+}
+
+@media screen and (min-width:801px) { /*801px den büyük genişliklere stilleri uygular*/
+}
