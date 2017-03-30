@@ -1,0 +1,209 @@
+﻿/************************************************************************************
+ 980 den k���k
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+
+    /* sayfacatisi */
+    #sayfacatisi {
+        width: 95%;
+    }
+
+
+
+    /* icerik */
+    #icerik {
+        width: 30%;
+        padding: 3% 4%;
+    }
+
+    /* sidebar */
+    #sidebar {
+        width: 30%;
+    }
+
+    #sayfa-logosu {
+        width: 30%;
+    }
+
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+
+    /*  videolar */
+    .video embed,
+    .video object,
+    .video iframe {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+    }
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+
+    /* Arka resim s�f�rla */
+    body {
+        background-image: none;
+    }
+
+
+    /* header */
+    #header {
+        height: auto;
+    }
+
+    /* search form */
+    #searchform {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        z-index: 100;
+        height: 30px;
+    }
+
+        #searchform #s {
+            width: 70px;
+        }
+
+            #searchform #s:focus {
+                width: 150px;
+            }
+
+    /* main nav */
+    #ana-menu {
+        position: static;
+        /*margin-top: 100px;*/
+    }
+
+    /* site logo */
+    #sayfa-logosu {
+        margin: 15px 100px 5px 0;
+        position: static;
+        height: 70px;
+        width: 160px;
+        background: url(images/logo_160.png) no-repeat;
+        float: none;
+    }
+
+    /* site A��klama */
+    /*#site-aciklama {
+		margin: 0 0 15px;
+		position: static;
+	}*/
+
+    /* i�erik */
+    #icerik {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+    }
+
+    /* sidebar */
+    #sidebar {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+        #sidebar .widget {
+            padding: 3% 4%;
+            margin: 0 0 10px;
+        }
+
+    /* embedded videos */
+    .video embed,
+    .video object,
+    .video iframe {
+        min-height: 250px;
+    }
+}
+
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+    /* disable webkit text size adjust (for iPhone) */
+    html {
+        -webkit-text-size-adjust: none;
+    }
+
+    /* main nav */
+    /*#ana-menu a {
+		font-size: 90%;
+		padding: 10px 8px;
+	}*/
+
+    /*#ana-menu 
+    {
+        display: none;
+    }*/
+
+
+    /* navigation ^5b*/
+
+    #menu_mobil ul {
+        float: none;
+    }
+
+    #menu_mobil > ul {
+        background: inherit;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 25px;
+        clear: left;
+        width: 90%;
+        height: auto;
+        text-align: center
+    }
+
+    #menu_mobil ul > li {
+        background: #51341a;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        float: none;
+        border-bottom: 1px solid #fff;
+        width: 45%;
+        min-width: 280px;
+        display: inline-block;
+    }
+
+    #menu_mobil li a:link, #menu_mobil li a:visited {
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        color: #fff;
+        text-align: center;
+        text-indent: 0px;
+        height: 40px;
+        padding: 0;
+        border: none;
+    }
+
+    #menu_mobil li a.current, #menu_mobil li a.current:hover {
+        color: #952;
+    }
+
+    #menu_mobil li a:hover, #menu_mobil li a:active {
+        border: none;
+        color: #cb7d20;
+    }
+
+    #menu_mobil li a:link span.tagline, #menu_mobil li a:visited span.tagline {
+        display: none;
+    }
+
+    #menu_mobil li ul {
+        display: none;
+    }
+
+    .no-js #menu_mobil li:hover ul, .no-js #menu_mobil li ul:hover {
+        display: none;
+    }
+}
