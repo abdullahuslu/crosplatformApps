@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zafer Demirkol Kişisel Sitesi</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/koyu-bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <!--http://www.bootswatch.com-->
+    <div id="page">
+        <header class="container">
+            <div id="menu" class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button class="btn btn-success navbar-toggle"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+
+                    <div id="logo">
+                        <a href='index.html'><h4>Zafer Demirkol </h4></a>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav"><a href="index.html">Anasayfa</a></li>
+                        <li class="nav"><a href="About.html">Hakkında</a></li>
+                        <li class="nav active"><a href="Contact.html">İletişim</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </header>
+
+        <section id="body" class="container">
+            <div class="page-header">
+
+                <ol class="breadcrumb">
+                    <li><a href="/">Anasayfa</a></li>
+                    <li class="active">İletişim Formu</li>
+                </ol>
+
+                <h1>İletişim Formu</h1>
+
+            </div>
+            <p>Bu örnek bir form gerçekte çalışmıyor :)</p>
+
+            <div class="row">
+
+                <form class="form-horizontal">
+                    <div class="form-group">
+
+                        <label for="nameInput" class="control-label col-md-2">İsim</label>
+                        <div class="col-md-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"> <span class="glyphicon glyphicon-arrow-down"></span></span>
+                                <input type="text" name="nameInput" class="form-control" placeholder="Lütfen isminizi giriniz" />
+                                <span class="input-group-addon">!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput" class="control-label col-md-2">Email</label>
+
+                        <div class="col-md-10">
+                            <div class="input-group">
+                                <span class="input-group-addon">Eposta</span>
+                                <input type="email" name="emailInput" class="form-control" placeholder=" Email" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Favoriler</label>
+                        <div class="col-md-10">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-success active"><input type="radio" /> ASP</label>
+                                <label class="btn btn-success"><input type="radio" />XML</label>
+                                <label class="btn btn-success"><input type="radio" />İnternet Teknolojileri</label>
+
+
+                                <div class="btn-group">
+                                    <button class="btn btn-success">Diğerleri </button>
+                                    <button class="btn btn-success" data-toggle="dropdown"> <span class="caret"></span></button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" tabindex="-1">ASP.NET</a></li>
+                                        <li><a href="#" tabindex="-1">10 adımda online</a></li>
+                                        <li class="divider"></li>
+                                        <li class="disabled"><a href="#" tabindex="-1">ayşegül</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Konu</label>
+                        <div class="col-md-10">
+                            <!--<select class="form-control">
+                                <option>ASP</option>
+                                <option>JavaScript</option>
+                                <option>Windows 8 Programlama</option>
+                                <option>Diğer</option>
+                            </select>-->
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-success" id="pickButton">Bir tane seçiniz</button>
+                                <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span></button>
+
+                                <ul class="dropdown-menu" id="reasonDropdown">
+                                    <li><a href="#" tabindex="-1">ASP</a></li>
+                                    <li><a href="#" tabindex="-1">JavaScript</a></li>
+                                    <li><a href="#" tabindex="-1">Windows 8 Programlama</a></li>
+                                    <li><a href="#" tabindex="-1">Diğer</a></li>
+
+                                </ul>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Mesaj</label>
+                        <div class="col-md-10">
+                            <textarea cols="40" rows="6" class="form-control" placeholder="Mesaj"></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-2">
+
+                            <input type="submit" value="Gönder" class="btn btn-success" />
+
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+
+            </div>
+
+            <h3>Adres Bilgileri</h3>
+            <div>
+                <address>
+                    Maltepe<br />
+                    Ana Cadde<br />
+                    İstanbul<br />
+                    <abbr title="Telefon">Tel:</abbr>
+                    216 000 45 45
+                </address>
+                <address>
+                    <strong>Eposta:</strong>   <a href="mailto:zaferdemirkol@gmail.com">zaferdemirkol@gmail.com</a><br />
+                </address>
+            </div>
+        </section>
+        <hr />
+        <footer class="container">
+            <p>Bütün hakları Zafer Demirkol'a aittir <a href="http://www.zaferdemirkol.com/">Zaferdemirkol</a>.</p>
+        </footer>
+    </div>
+
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/benimScript.js"></script>
+
+
+
+</body>
+</html>
